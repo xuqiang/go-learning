@@ -32,4 +32,15 @@ var a int = 5
 5. go中的数据类型
 	* var b bool = false / var b bool = true
 	* int8, int16, int32, uint32, uint8, uint64, float32, float64
-	* var s string = "a string type". 需要注意的是go中string类型是不可变的
+	* var s string = "a string type". 需要注意的是go中string类型是不可变的。go中的字符串默认是使用utf-8编码的。
+	* runes runes似乎int32的别名，It is an UTF-8 encoded code point。
+	* complex 复数类型 ，数学上使用a + bi的形式，其中i是复数单位，go中类似，例如var i complex = 1 = 2i.
+	* error error类型，例如var e error。默认值为nil
+6. Operators and built-in functions 操作符 内建函数
+和c语言基本类似，省略
+
+7. 控制结构
+具体参考代码
+	* if else
+	* goto 
+	* for 
