@@ -29,4 +29,7 @@ var a int = 5
 	_, b = 10, 11
 那么b的值将为11
 4. 如果是定义declare但是未使用的变量，在go中会出现编译error "a declared and not used"
-
+5. go中的数据类型
+	* var b bool = false / var b bool = true
+	* int8, int16, int32, uint32, uint8, uint64, float32, float64
+	* var s string = "a string type". 需要注意的是go中string类型是不可变的
