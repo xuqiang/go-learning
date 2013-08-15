@@ -48,7 +48,7 @@ var a int = 5
 	* switch go中的switch默认是没有fallthrough的，可以铜鼓fallthrough关键字指定
 
 8. Built-in functions 内建函数
-内建函数是自动导入的，无需import任何的包，内建函数包含:<img src='https://raw.github.com/xuqiang/go-learning/master/images/predefine-funtion.jpg' />
+内建函数是自动导入的，无需import任何的包，内建函数包含:<img src='https://raw.github.com/xuqiang/go-learning/master/images/predefine-funtion.jpg' /> 
 	* close : close channel
 	* delete 删除map中的数据
 	* len & cap 
@@ -57,4 +57,11 @@ var a int = 5
 	* copy copy slice
 	* append
 	* panic & recover 异常处理使用
-	* 
+	* print & println 
+	* complex & real imag
+
+9. 数据结构array, slice, maps
+	* array 定义int型的数组 var arr[10] int; 数组是值类型的，这意味着如果把array a赋值给b话将会拷贝a的数据到b。同样的如果将array传递给func的话，也是会进行拷贝，而不是传递地址。具体参考代码test_array.go
+	* slice slice可以动态生长，slice是引用类型，具体使用参考test_slice.go. array和slice可以执行len和cap函数，区别<img src='https://raw.github.com/xuqiang/go-learning/master/images/array-vs-slice.jpg' />.  
+
+10. bookmark : 29
