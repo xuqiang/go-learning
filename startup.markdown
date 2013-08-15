@@ -44,3 +44,17 @@ var a int = 5
 	* if else
 	* goto 
 	* for 
+	* range
+	* switch go中的switch默认是没有fallthrough的，可以铜鼓fallthrough关键字指定
+
+8. Built-in functions 内建函数
+内建函数是自动导入的，无需import任何的包，内建函数包含:
+	* close : close channel
+	* delete 删除map中的数据
+	* len & cap 
+	* new 
+	* make
+	* copy copy slice
+	* append
+	* panic & recover 异常处理使用
+	* 
